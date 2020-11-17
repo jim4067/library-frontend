@@ -1,4 +1,5 @@
 import React from 'react';
+import UpdateBirth from './Updatebirth';
 import { useQuery } from '@apollo/client';
 import { ALL_AUTHORS } from '../queries';
 
@@ -13,7 +14,7 @@ const Authors = (props) => {
 
 	//this controlls which component is rendered(shown to user). Simple but gets the job done
 	if (!props.show) {
-		return null
+		return null;
 	}
 
 	return (
@@ -36,6 +37,8 @@ const Authors = (props) => {
 					))}
 				</tbody>
 			</table>
+
+			{/* <UpdateBirth /> */}
 
 		</div>
 	);
