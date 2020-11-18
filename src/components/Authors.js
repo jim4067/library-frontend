@@ -1,5 +1,5 @@
 import React from 'react';
-import UpdateBirth from './Updatebirth';
+import UpdateBirth from './UpdateBirth';
 import { useQuery } from '@apollo/client';
 import { ALL_AUTHORS } from '../queries';
 
@@ -38,7 +38,7 @@ const Authors = (props) => {
 				</tbody>
 			</table>
 
-			{/* <UpdateBirth /> */}
+			<UpdateBirth />
 
 		</div>
 	);
